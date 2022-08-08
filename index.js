@@ -101,7 +101,7 @@ function renderBook (books, title, amountOfNotes, bookIndex) {
   var firstChild = booksList.firstChild;
 
   var contents = generateMarkdown(title, books);
-  download(anchor, `${bookIndex}.md`, contents);
+  download(anchor, `${title}.md`, contents);
   booksList.insertBefore(newDiv, firstChild);
 }
 
